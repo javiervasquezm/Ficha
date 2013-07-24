@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtTituloHechos"
+                android:layout_width="1280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/titTabDenuncia"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="20dip"
+                android:text="@string/den_id_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ems="10"
+                android:hint="@string/den_id_name"
+                android:inputType="number"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10sp"
+                android:text="@string/den_desc_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/den_desc_name"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10sp"
+                android:text="@string/den_fecha_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/fecha"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/den_fecha_name"
+                android:inputType="date"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10sp"
+                android:text="@string/den_denunciante_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/denunciante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/den_denunciante_name"
+                android:inputType="text"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10sp"
+                android:text="@string/den_tel_denunciante_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/telDenunciante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/den_tel_denunciante_name"
+                android:inputType="phone"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10sp"
+                android:text="@string/den_responsable_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/asignada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/den_responsable_name"
+                android:inputType="text"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10sp"
+                android:text="@string/den_longitud_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/den_longitud_name"
+                android:inputType="text"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="120dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10sp"
+                android:text="@string/den_latitud_name"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/den_latitud_name"
+                android:inputType="text"
+                android:textColorHint="@color/red"
+                android:textSize="18sp" >
+
+            </EditText>
+        </TableRow>
+        
+    <TableRow
+        android:id="@+id/tableButtons"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/insertButton"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="170dp"
+            android:text="@string/insertButton" />
+
+        <Button
+            android:id="@+id/updateButton"
+            style="@style/AppTheme"          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/updateButton" />
+    </TableRow>
+
+</TableLayout>
